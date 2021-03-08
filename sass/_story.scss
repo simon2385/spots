@@ -45,11 +45,11 @@
     display: grid;
     align-content: center;
     justify-items: start;
+  }
 
-    &__text {
-      font-size: 1.5rem;
-      font-style: italic;
-      margin-bottom: 4rem;
-    }
+  &__text {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
