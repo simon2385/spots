@@ -7,18 +7,39 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
-  grid-row-gap: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+    row-gap: 3vh;
+  }
 
   &__list {
+    margin-top: -15vh;
     display: grid;
     grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
+    grid-row-gap: 5vh;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 0;
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {
-    height: 100%;
-    transform: translateX(-1.2rem);
+    height: 7rem;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid $color-primary-dark;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 5rem;
+    }
   }
 
   &__sold {
@@ -26,11 +47,4 @@
     color: $color-grey-light-2;
     margin-top: -3px;
   }
-}
-
-.img-box {
-  width: 7rem;
-  height: 7rem;
-  overflow: hidden;
-  border-radius: 50%;
 }

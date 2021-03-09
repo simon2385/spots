@@ -22,6 +22,10 @@
     text-align: center;
     display: block;
     transition: all 0.3s;
+
+    @media only screen and (max-width: bp-small) {
+      padding: 1rem;
+    }
   }
 
   &__link:hover,
@@ -38,4 +42,5 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+
 }
